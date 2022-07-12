@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>我的简历</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #eee;
+            margin: 20px 0;
+        }
+
+        article {
+            width: 21cm;
+            min-height: 29.7cm;
+            background: white;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 1em;
+        }
+    </style>
+    <style media="print">
+        body {
+            margin: 0;
+        }
+
+        .page2 {
+            page-break-before: always;
+            margin-top: 30px;
+        }
+    </style>
+    <style>
+        body {
+        }
+
+        p {
+            margin: .3em 0;
+        }
+
+        h1 {
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        h4,
+        h5,
+        h6 {
+            font-weight: normal;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        strong {
+            font-weight: normal;
+            color: #ffa700;
+        }
+
+        h1, h2 ,p{
+            color: rgba(2, 39, 61);
+        }
+
+        a {
+            color: rgba(67, 185, 127);
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
+
+        p,
+        li {
+            color: rgba(2, 39, 61, 0.8);
+        }
+
+        strong {
+            font-weight: normal;
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        .bio {
+            position: relative;
+        }
+
+        .bio img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+
+    <style>
+        .projects {
+        }
+
+
+
+        .projects strong {
+            color: #ffa700;
+        }
+
+        .projects > ol {
+            margin-top: 0;
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        .projects > ol > li {
+            margin-bottom: 20px;
+        }
+
+        .projects > ol > li > header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .projects > ol > li h3 {
+            display: inline-block;
+        }
+    </style>
+    <style>
+        .skills {
+        }
+
+        #skills {
+
+            width: 500px;
+            height: 270px;
+        }
+
+        @media print {
+            #skills {
+                display: none;
+            }
+        }
+
+
+        .skills > .wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills > .wrapper > :first-child {
+            margin-right: 24px;
+        }
+
+        .skills > .wrapper > #skills {
+        }
+
+        .skills > .wrapper > ul {
+            color: #666;
+        }
+
+        .skills > .wrapper strong {
+            color: #ffa700;
+        }
+
+        .skills > .wrapper > ul > li {
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+    </style>
+    <style>
+        .openSource {
+        }
+
+        .openSource > h2 {
+        }
+
+        .openSource header img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .openSource > ul {
+        }
+
+        .openSource > ul > li {
+            margin-bottom: 20px;
+        }
+
+        .openSource header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .openSource h3 {
+        }
+    </style>
+    <style>
+        .jobs {
+        }
+
+        .jobs > h2 {
+        }
+
+        .jobs > ol {
+        }
+
+        .jobs > ol > li {
+            margin: 12px 0;
+        }
+
+        .jobs header {
+            display: flex;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .jobs header > h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .jobs header > h4 {
+            margin-left: 1em;
+            font-size: 18px;
+        }
+
+        .jobs header > span {
+            font-size: 18px;
+            margin-left: auto;
+        }
+    </style>
+
+
+    <style>
+        @media (max-width: 500px) {
+            body {
+                margin: 0;
+            }
+
+            article {
+                width: auto;
+                height: auto;
+            }
+
+            .bio img {
+                display: none;
+            }
+
+            .skills .wrapper {
+                flex-direction: column;
+            }
+
+            #skills {
+                width: auto;
+            }
+
+            .jobs header {
+                flex-direction: column;
+            }
+
+            .jobs header > h3,
+            .jobs header > h4,
+            .jobs header > span {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<article>
+    <section class="bio">
+        <h1>陆治宇</h1>
+        <img src="./images/meself.jpg" alt="" width="130" height="180">
+        <p>
+            男 | 22岁 | 前端开发工程师 | 深圳
+        </p>
+        <p>
+            手机：18643731711 | 微信：BRUCE_ZHIYU | 邮箱：945552962@qq.com
+        </p>
+    </section>
+    <section class="others">
+        <ul>
+            <li><a href="https://github.com/Brucezhiyu/myBlog">我的博客</a>，目前已有 26 篇技术文章</li>
+            <li><a href="https://github.com/Brucezhiyu">我的 GitHub</a>，过去5个月有 400 次提交</li>
+        </ul>
+    </section>
+
+    <section class="education">
+        <h2>教育经历</h2>
+        <p>
+            <span><time>2019年</time>~<time>2023年</time></span>
+            吉林大学珠海学院 计算机科学与技术 本科
+        </p>
+    </section>
+
+
+    <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+            <li>
+                <header>
+                    <h3> Bue UI--UI组件库</h3>
+                    <span>
+              <a href="https://github.com/Brucezhiyu/Bue-UI-1">源码链接</a>
+              <a href="https://brucezhiyu.gitee.io/bue-ui-website">项目预览</a>
+            </span>
+                </header>
+                <p>
+                    一款基于 <strong>Vue</strong> / <strong>TypeScript</strong> / <strong>Vite</strong> /
+                    <strong>SCSS</strong> 的 UI 组件库。
+
+                </p>
+                <p>
+                    将日常前端开发常用组件封装，主要组件有导航栏、弹出框、<strong>开关选择按钮</strong>、按钮等。
+
+                </p>
+                <p>
+                    模块化的源代码简洁明了，易于阅读。
+                </p>
+                <p>
+                    制作过程让我对 TypeScript 和 SCSS 有了新的认识。
+                </p>
+                <p>
+                    我还推出了官方文档，可在线查看代码，并支持PC端和移动端浏览。
+                </p>
+
+            </li>
+
+            <li>
+                <header>
+                    <h3>钱多多记账--移动端记账应用</h3>
+                    <span>
+              <a href="https://github.com/Brucezhiyu/qianduoduo-1">源码链接</a>
+              <a href="https://brucezhiyu.gitee.io/qianduoduo-1-website">项目预览</a>
+            </span>
+                </header>
+                <p>
+                    一个基于 <strong>Vue</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+                </p>
+
+                <p>
+                    我从自己的需求出发而设计，特点是快速记账，而且可以通过图表查看自己的消费习惯。
+                </p>
+
+                <p>
+                    使用<strong>VueRouter</strong>划分了三个页面：记账、标签、统计。
+                </p>
+                <p>
+                    实现了复杂信息保存，标签管理，数据统计展示等主要功能。
+                </p>
+                <p>
+                    该项目使我对Vue和Typescript的理解更加深刻，过程中遇到了很多问题并记录了多篇<a href="https://github.com/Brucezhiyu/myBlog">博客</a>。
+                </p>
+            </li>
+            <li>
+                <header>
+                    <h3>社区数字化管理--大屏可视化</h3>
+                    <span>
+                    <a href="https://github.com/Brucezhiyu/bigscreen-1">源码链接</a>
+                    <a href="https://brucezhiyu.gitee.io/bigscreen-website-1">项目预览</a>
+                </span>
+                </header>
+                <p>技术栈： <strong>React</strong> / <strong>ReactRouter</strong> / <strong>Echarts</strong> </p>
+                <p>这个项目是我在学习前端可视化与 echarts 时，仿照开源项目制作而成的。</p>
+                <p>页面布局使用了 Grid 和 Flex 布局。</p>
+                <p>为了适应所有屏幕，我使用了动态 rem 方案，具体思路见<a href="https://github.com/Brucezhiyu/myBlog/issues/26">我的博客</a></p>
+                <p>项目中包含的图例有柱形图、折线图、饼图等，并且可以实时更新数据并辅以动画交互。</p>
+                <p>通过这个项目，我熟练掌握了<strong>大屏可视化</strong>项目的制作技巧。</p>
+            </li>
+        </ol>
+    </section>
+
+
+    <section class="openSource">
+        <ul>
+            <li>
+                <header>
+                    <h3>会游泳的小黄鸭--CSS3动画</h3>
+                    <span>
+              <a href="https://github.com/Brucezhiyu/yellow-duck-1">源码链接</a>
+              <a href="https://brucezhiyu.gitee.io/yellow-duck-1/dist/text.html">项目预览</a>
+            </span>
+                </header>
+                <p>
+                    这是一个基于 <strong>CSS3</strong> 和 <strong>动画</strong> 的可爱页面。
+                </p>
+                <p>
+                    是我在网上冲浪时看到的小动画，自己动手完美还原了它。
+                </p>
+                <p>
+                    可以根据代码编写的同时展示小黄鸭，并且可以控制编写速度。
+                </p>
+                <p>
+                    制作过程中<strong>大幅提高CSS熟练度</strong>，提高了编程技巧，受到同学的好评。
+                </p>
+            </li>
+            <li>
+                <header>
+                    <h3>前端导航站点</h3>
+                    <span>
+                    <a href="https://github.com/Brucezhiyu/daohang-1">源码链接</a>
+                    <a href="https://brucezhiyu.gitee.io/daohang-1/dist/index.html">项目预览</a>
+                </span>
+                </header>
+                <p>一款基于 <strong>HTML5</strong> / <strong>CSS3</strong> / <strong>JavaScript</strong> 的简易导航网站。</p>
+                <p>实现了站点创建、<strong>使用键盘字母触发跳转</strong>、搜索引擎等常见功能。</p>
+                <p>运用 hashMap 和 localStorage 实现新增网站，数据存储。</p>
+                <p>该项目使我对 <strong>jQuery</strong> 和 <strong>JavaScript</strong> 的运用更加熟练。</p>
+            </li>
+            <li>
+                <header>
+                    <h3>自己写的 DOM 库</h3>
+                    <span>
+                    <a href="https://github.com/Brucezhiyu/dom-1">源码链接</a></span>
+                </header>
+                <p>是我在学习 <strong>封装</strong> 时手写的库。</p>
+                <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能。</p>
+                <p>该项目帮助我深刻了解封装原理，使我对之后Vue的学习有很大帮助。</p>
+            </li>
+            <li>
+                <header>
+                    <h3>简易画板</h3>
+                    <span>
+              <a href="https://github.com/Brucezhiyu/canvas-text">源码链接</a>
+              <a href="https://brucezhiyu.gitee.io/canvas-text/">项目预览</a>
+            </span>
+                </header>
+                <p>我在学习 <strong>Canvas</strong> 时做的一个小作品。</p>
+                <p>实现了点击并拖动鼠标画线条的功能。</p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>关于我</h2>
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <header>
+                        <h3>2020-2022吉林大学珠海学院招生与就业处--校级新媒体团队负责人</h3>
+                        <p>主要负责领导组织团队成员，进行公众号推文的撰写及图片内容的拍摄。</p>
+                        <p>任职期间策划并组织<strong>创新创业大赛</strong>现场拍摄、顺德中学来访现场拍摄等8场校级赛事活动。</p>
+                        <p>推动成员产出高质量推文，任职期间的表现及产出成果广受学校领导师生的好评。</p>
+                    </header>
+                </li>
+                <li>
+                    <header>
+                        <h3>500强企业--MEP澳门友邦保险项目实战</h3>
+                        <p>一个关于<strong>团队合作</strong>，策划研发新品，统筹运营推广的<strong>世界500强企业线下实战项目</strong></p>
+                        <p>我主要负责项目研发、平面设计、推广视频拍摄。</p>
+                        <p>在团队遇到技术困难时<strong>主动承担</strong>海报和广告的制作，使团队在<strong>一天内</strong>完成产品发布工作，并取得48小时商业实战营销赛<strong>冠军</strong>。</p>
+                        <p>以500强员工的身份学习到了澳门企业独有的工作和文化。</p>
+                        <p>以本人在此次项目中优异的个人表现获得了500强公司友邦保险（AIA）<strong>个人推荐信</strong>。</p>
+                    </header>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+            <ul>
+                <li>能够使用HTML5标签编写 <strong>语义化</strong> 的页面</li>
+                <li>熟练使用 <strong>CSS/SCSS</strong>，能将设计稿<strong>完美还原</strong></li>
+                <li>熟悉 JavaScript 和<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由 等</li>
+                <li>熟练掌握 <strong>Vue全家桶</strong> 的使用，包括 VueCli、VueRouter、Vuex 等</li>
+                <li>熟悉 <strong>React</strong>，ReactRouter</li>
+                <li>熟悉 ES6，包括 let / Promise / 析构赋值</li>
+                <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+                <li>掌握 <strong>Git/Github</strong> 工作部署流程</li>
+                <li>了解 <strong>Webpack 的配置</strong></li>
+                <li>使用 <strong>响应式布局</strong></li>
+            </ul>
+        </div>
+    </section>
+    <section class="education">
+        <h2>奖项、证书、推荐信</h2>
+        <p>
+            推荐信 | 500强公司友邦保险（AIA）个人推荐信
+        </p>
+        <p>
+            奖项 | 2019年-2020年，荣获校级三等奖学金
+        </p>
+        <p>
+            奖项 | 2019年-2020年，荣获校级单项奖学金-文体活动奖
+        </p>
+        <p>
+            证书 | 珠海市职业技能精准培训合格证（Photoshop）
+        </p>
+        <p>
+            证书 | 国家级志愿者证书 （品牌联盟）
+        </p>
+    </section>
+
+</article>
+<script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+<script src="./main.js"></script>
+</body>
+
+</html>
